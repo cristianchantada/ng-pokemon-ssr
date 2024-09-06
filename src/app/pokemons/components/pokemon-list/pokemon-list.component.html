@@ -4,10 +4,9 @@
   <!-- PokemonCard -->
    @for (pokemon of pokemons(); track pokemon.id) {
      <pokemon-card [pokemon]="pokemon" />
+   } @empty {
+     <div class="col-span-5 tex-center border-white h-28 flex justify-center items-center">
+       No hay pokémons
+     </div>
    }
-  <!-- Si no hay pokemons -->
-<!-- <div class="col-span-5 tex-center border-white h-28 flex justify-center items-center">
-  No hay pokémons
-</div> -->
-
 </div>
